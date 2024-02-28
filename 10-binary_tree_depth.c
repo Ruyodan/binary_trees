@@ -9,19 +9,7 @@
 */
 size_t binary_tree_depth(const binary_tree_t *tree)
 {
-	/* If the tree is NULL, the depth is 0 */
-	if (tree == NULL)
-	{
-	return (0);
-	}
 
 	/* Calculate the depth of the parent node */
-	size_t depth = 0;
-
-	if (tree->parent)
-	{
-	depth = 1 + binary_tree_depth(tree->parent);
-	}
-
-	return (depth);
+	return ((tree && tree->parent) ? 1 + binary_tree_depth(tree->parent) : 0);
 }
