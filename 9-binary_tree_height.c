@@ -7,10 +7,10 @@
 * Return: The height of the binary tree. If the tree is NULL, returns 0.
 *
 */
+
 size_t binary_tree_height(const binary_tree_t *tree)
 {
-	/* If the tree is NULL, the height is 0 */
-	if (tree == NULL)
+	if (tree)
 	{
 	size_t l = 0, r = 0;
 
