@@ -2,8 +2,8 @@
 
 /**
  * binary_tree_is_full - Function that checks
- * if a binary tree is full.
- * A binary tree is considered full if 
+ * if a binary tree is full
+ * A binary tree is considered full if
  * every node has either two children or no children.
  *
  * @tree: Pointer to the root node of the binary tree.
